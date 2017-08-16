@@ -2,12 +2,21 @@
 This is a game called 'The Room.' It is a text-based game.
 """
 
-from classes import *
+import os
+
+clear = lamda: os.system('cls')
+
+
 
 print "You wake up in a dark room. Where is the light?"
-print "What would you like to do? \n(enter the number of the option you'd like to choose)"
+print "What would you like to do? \n"
 
-def wake_up(self):
+clear()
+
+print "(enter the number of the option you'd like to choose)"
+
+
+def wake_up():
     opts = {1:'Stand up.', 2:'Go back to sleep.'}
 
     user_input = raw_input(str(opts) + "\n")
@@ -29,10 +38,10 @@ def wake_up(self):
             print "Enter a real option, smart alec."
             user_input = raw_input(str(opts) + "\n")
 
-def closet_1(self):
+def closet_1():
     pass
 
-def standing_1(self):
+def standing_1():
     print "Where do you want to go?"
     opts = {1:'Left', 2:'Right', 3:'Forward', 4:'Backward'}
 
@@ -64,7 +73,7 @@ def standing_1(self):
             print "Come on, really?"
             user_input = raw_input(str(opts) + "\n")
 
-def desk_1(self):
+def desk_1():
     print "You're at a desk. What would you like to do?"
     opts = {1:'Sit Down', 2:'Feel around on the surface', 3:'Feel around for drawers', 4:'Go back to the center of the room'}
 
