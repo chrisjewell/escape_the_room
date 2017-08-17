@@ -6,8 +6,8 @@ def clear():
 
 class Room:
     """docstring for ."""
-    def __init__(self, lights_on):
-        super(, self).__init__()
+    def __init__(self):
+#        super(, self).__init__()
         self.lights_on = False
 
 

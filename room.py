@@ -7,6 +7,6 @@ import classes as cl
 
 
 
+game = cl.Room()
 
-
-cl.room.wake_up()
+game.wake_up()
